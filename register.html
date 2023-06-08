@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register FE Class</title>
+  </head>
+  <body>
+    <h2>Register FE Class</h2>
+    <form action="/product/edit" method="get">
+      <label>Full Name</label>
+      <input name="fullname" type="text" /><br /><br />
+      <label>Gender</label><br />
+      <input name="gender" type="radio" value="Female" />Female<br />
+      <input name="gender" type="radio" value="Male" />Male<br />
+      <input name="gender" type="radio" value="Other" />Other<br /><br />
+
+      <label>Hobbies</label><br />
+      <input name="hobby1" type="checkbox" value="coding" />Coding<br />
+      <input name="hobby2" type="checkbox" value="reading" />Reading<br />
+      <input name="hobby3" type="checkbox" value="travel" />Travel<br /><br />
+
+      <input
+        name="hello"
+        type="button"
+        onclick="sayHello()"
+        value="Say Hello"
+      />
+
+      <br /><br />
+
+      <label>DOB</label><br />
+      <input name="dob" type="date" /><br /><br />
+      <input name="dob2" type="datetime-local" /><br /><br />
+
+      <label>Course</label>
+      <select name="course">
+        <option value="frontend">Frontend</option>
+        <option value="backend">Backend</option>
+        <option value="fullstack">FullStack</option>
+      </select><br /><br />
+
+      <label>Feedback</label>
+      <textarea name="feedback" cols="30" rows="5">
+        HelloWorldHelloWorldHelloWorldHelloWorld
+      </textarea><br /><br />
+
+      <input type="submit" value="Register" />
+      <input type="reset" value="Reset" />
+    </form>
+
+    <script>
+      function sayHello() {
+        alert("Hello C06");
+      }
+    </script>
+  </body>
+</html>
